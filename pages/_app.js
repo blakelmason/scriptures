@@ -4,6 +4,7 @@ import withReduxStore from '../lib/with-redux-store'
 import { Provider } from 'react-redux'
 import Template from '../components/Template'
 import 'bootstrap/scss/bootstrap.scss'
+import './style.scss'
 
 class MyApp extends App {
   render() {

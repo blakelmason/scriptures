@@ -9,7 +9,7 @@ export default function Chapter20() {
           collection: 'Book of Mormon',
           book: '1 Nephi',
           chapter: 20,
-          verses: '1'
+          verses: '1',
         }}
       />
       <p>
@@ -19,11 +19,7 @@ export default function Chapter20() {
         Isaiah makes.
       </p>
       <ol>
-        <li>
-          <a href="https://www.churchofjesuschrist.org/study/scriptures/gs/jacob-son-of-isaac?lang=eng">
-            "house of Jacob"
-          </a>
-        </li>
+        <li>"house of Jacob"</li>
         <li>
           <a
             href="https://www.abarim-publications.com/Meaning/Israel.html#.XoUeZdPYomI"
@@ -33,22 +29,10 @@ export default function Chapter20() {
           </a>
         </li>
         <li>
-          <a
-            href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/covenant?lang=eng"
-            target="_blank"
-          >
-            "come forth out of the waters of Judah, or out of the waters of
-            baptism"
-          </a>
+          "come forth out of the waters of Judah, or out of the waters of
+          baptism"
         </li>
-        <li>
-          <a
-            href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/temples?lang=eng"
-            targe="_blank"
-          >
-            "who swear by the name of the Lord"
-          </a>
-        </li>
+        <li>"who swear by the name of the Lord"</li>
         <li>"make mention of the God of Israel"</li>
       </ol>
       <p>
@@ -62,7 +46,7 @@ export default function Chapter20() {
           collection: 'Book of Mormon',
           book: '1 Nephi',
           chapter: 20,
-          verses: '2'
+          verses: '2',
         }}
       />
       <p>
@@ -81,7 +65,7 @@ export default function Chapter20() {
           collection: 'Book of Mormon',
           book: '1 Nephi',
           chapter: 20,
-          verses: '3'
+          verses: '3',
         }}
       />
     </Chapter>

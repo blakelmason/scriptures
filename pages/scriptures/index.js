@@ -1,9 +1,10 @@
 import Link from 'next/link'
-import links from '../../data/links'
+import { scriptures as links } from '../../data/links'
+import stringToRoute from '../../util/stringToRoute'
 
 export default function Scriptures() {
   return (
-    <div className="px-2">
+    <div>
       {links.map((collection, i) => (
         <div key={'scriptures-collection-' + i} className="mb-4">
           <div className="h4 mb-3">
@@ -18,13 +19,15 @@ export default function Scriptures() {
                   style={{
                     display: 'grid',
                     gridGap: 10,
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(50px, 1fr))'
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(50px, 1fr))',
                   }}
                 >
                   {book.chapters.map((chapter, i) => (
                     <Link
                       key={`scriptures-${book.name}-chapter-${i}`}
-                      href={`/scriptures/${collection.href}/${book.href}/${chapter}`}
+                      href={`/scriptures/${stringToRoute(
+                        collection.name
+                      )}/${stringToRoute(book.name)}/${chapter}`}
                     >
                       <a className="border m-auto bg-white">
                         <div

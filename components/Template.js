@@ -5,7 +5,8 @@ import classNames from 'classnames'
 
 const pages = [
   { name: 'Home', href: '/' },
-  { name: 'Scriptures', href: '/scriptures' }
+  { name: 'Scriptures', href: '/scriptures' },
+  { name: 'Topics', href: '/topics' },
 ]
 
 export default function Template({ children }) {
@@ -13,7 +14,7 @@ export default function Template({ children }) {
   return (
     <div className="bg-secondary">
       <div
-        className="bg-white mx-auto pb-4"
+        className="bg-white mx-auto pb-3"
         style={{ maxWidth: 1200, minHeight: '100vh' }}
       >
         <div className="display-4 text-center pt-3 mb-3">Study</div>
@@ -21,7 +22,7 @@ export default function Template({ children }) {
           className="border-top border-bottom bg-light py-1 d-flex justify-content-around mb-4"
           style={{
             position: 'sticky',
-            top: 0
+            top: 0,
           }}
         >
           {pages.map(({ name, href }, i) => {
@@ -31,7 +32,7 @@ export default function Template({ children }) {
                 <a
                   className={classNames({
                     underline: path,
-                    ['text-dark']: path
+                    ['text-dark']: path,
                   })}
                 >
                   {name}
@@ -40,7 +41,7 @@ export default function Template({ children }) {
             )
           })}
         </div>
-        {children}
+        <div className="mx-3">{children}</div>
       </div>
     </div>
   )

@@ -1,4 +1,4 @@
-import collections from '../data/links'
+import { scriptures as collections } from '../data/links'
 import find from 'lodash/find'
 import Link from 'next/link'
 import ChevronLeft from '@material-ui/icons/ChevronLeft'
@@ -7,15 +7,24 @@ import { useRouter } from 'next/router'
 
 export default function Chapter({ children }) {
   const split = useRouter().pathname.split('/')
-  const collection = find(collections, ({ href }) => href === split[2])
-  const book = find(collection.books, ({ href }) => href === split[3])
+  const collection = find(
+    collections,
+    ({ name }) => name.toLowerCase() === routeToName(split[2])
+  )
+  const book = find(
+    collection.books,
+    ({ name }) => name.toLowerCase() === routeToName(split[3])
+  )
   const chapters = book.chapters
   const chapter = split[4]
   const index = chapters.indexOf(Number(chapter))
   const fontSize = 35
+  function routeToName(string) {
+    return string.split('-').join(' ')
+  }
   return (
     <>
-      <div className="h3 text-center d-flex justify-content-between">
+      <div className="h3 text-center d-flex justify-content-between mb-4">
         <div className="ml-4" style={{ width: fontSize }}>
           {index > 0 && (
             <Link
@@ -46,7 +55,7 @@ export default function Chapter({ children }) {
           )}
         </div>
       </div>
-      <div className="p-2">{children}</div>
+      {children}
     </>
   )
 }
