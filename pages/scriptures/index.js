@@ -12,7 +12,7 @@ export default function Scriptures() {
           </div>
           <div>
             {collection.books.map((book, i) => (
-              <div key={'scriptures-book-' + i}>
+              <div key={'scriptures-book-' + i} className="mb-3">
                 <div className="h5 mb-2">{book.name}</div>
                 <div
                   className="border bg-light p-2"

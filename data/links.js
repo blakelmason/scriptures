@@ -17,6 +17,10 @@ export const scriptures = [
         name: '1 Nephi',
         chapters: [20],
       },
+      {
+        name: 'Alma',
+        chapters: [16],
+      },
     ],
   },
 ]
