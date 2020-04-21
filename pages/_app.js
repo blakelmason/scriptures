@@ -6,6 +6,8 @@ import Template from '../components/Template'
 import 'bootstrap/scss/bootstrap.scss'
 import './style.scss'
 
+// put layout here
+
 class MyApp extends App {
   render() {
     const { Component, pageProps, reduxStore } = this.props
