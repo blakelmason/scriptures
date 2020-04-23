@@ -7,6 +7,7 @@ import 'bootstrap/scss/bootstrap.scss'
 import './style.scss'
 
 // put layout here
+// dynamic layout depends on the route
 
 class MyApp extends App {
   render() {
