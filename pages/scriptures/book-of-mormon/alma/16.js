@@ -1,9 +1,9 @@
-import Chapter from '../../../../components/Chapter'
+import ExternalLink from '../../../../components/ExternalLink'
 import Scripture from '../../../../components/Scripture'
 
 export default function Chapter20() {
   return (
-    <Chapter>
+    <>
       <Scripture
         data={{
           collection: 'Book of Mormon',
@@ -34,15 +34,12 @@ export default function Chapter20() {
         think we are in the "pouring out the Spirit" phase to prepare us for
         when Jesus visits us again, and I believe the grafting has yet to happen
         for us as a people.{' '}
-        <a
-          href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/19?lang=eng"
-          target="_blank"
-        >
+        <ExternalLink href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/19?lang=eng">
           3 Nephi 19
-        </a>{' '}
+        </ExternalLink>{' '}
         is the "grafting" for the Nephites, and I wonder if an event will happen
         just like this for the saints in the New Jerusalem. I believe it will.
       </p>
-    </Chapter>
+    </>
   )
 }

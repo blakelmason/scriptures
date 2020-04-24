@@ -1,9 +1,9 @@
-import Chapter from '../../../../components/Chapter'
 import Scripture from '../../../../components/Scripture'
+import ExternalLink from '../../../../components/ExternalLink'
 
 export default function Chapter20() {
   return (
-    <Chapter>
+    <>
       <Scripture
         data={{
           collection: 'Book of Mormon',
@@ -51,12 +51,9 @@ export default function Chapter20() {
       />
       <p>
         Isaiah continues by describing the hypocrisy of the people. See{' '}
-        <a
-          href="https://speeches.byu.edu/talks/donald-w-parry/angels-chariots-and-the-lord-of-hosts/"
-          target="_blank"
-        >
+        <ExternalLink href="https://speeches.byu.edu/talks/donald-w-parry/angels-chariots-and-the-lord-of-hosts/">
           Lord of Hosts
-        </a>{' '}
+        </ExternalLink>{' '}
         and go to the section titled "The Angels of the Lord of Hosts" for more
         information about the title "Lord of Hosts".
       </p>
@@ -68,6 +65,6 @@ export default function Chapter20() {
           verses: '3',
         }}
       />
-    </Chapter>
+    </>
   )
 }
