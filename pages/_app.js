@@ -5,18 +5,15 @@ import { Provider } from 'react-redux'
 import Template from '../components/Template'
 import 'bootstrap/scss/bootstrap.scss'
 import './style.scss'
-import SubTemplate from '../components/SubTemplate'
 
 class MyApp extends App {
   render() {
     const { Component, pageProps, reduxStore } = this.props
     return (
       <Template>
-        <SubTemplate>
-          <Provider store={reduxStore}>
-            <Component {...pageProps} />
-          </Provider>
-        </SubTemplate>
+        <Provider store={reduxStore}>
+          <Component {...pageProps} />
+        </Provider>
       </Template>
     )
   }

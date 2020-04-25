@@ -2,6 +2,7 @@ import './Template.scss'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import classNames from 'classnames'
+import SubTemplate from './SubTemplate'
 
 const pages = [
   { name: 'Home', href: '/' },
@@ -41,7 +42,9 @@ export default function Template({ children }) {
             )
           })}
         </div>
-        <div className="mx-3">{children}</div>
+        <div className="mx-3">
+          <SubTemplate>{children}</SubTemplate>
+        </div>
       </div>
     </div>
   )
