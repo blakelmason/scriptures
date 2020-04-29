@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import Chapter from './Chapter'
+import Topic from './Topic'
 
 export default function SubTemplate({ children }) {
   const router = useRouter()
@@ -8,7 +9,7 @@ export default function SubTemplate({ children }) {
   if (split.length > 2) {
     return {
       scriptures: <Chapter>{children}</Chapter>,
-      topics: <div>MAKE A TEMPLATE{children}</div>,
+      topics: <Topic>{children}</Topic>,
     }[path]
   } else return children
 }

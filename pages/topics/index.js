@@ -8,9 +8,7 @@ export default function Topics() {
     <div>
       {links.map(({ letter, topics }, i) => (
         <Fragment key={letter + '-' + i}>
-          <div className="h3" style={{ textDecoration: 'underline' }}>
-            {letter}
-          </div>
+          <div className="h2">{letter}</div>
           <div className="row">
             {topics.map((topic, i) => {
               return (
@@ -22,6 +20,7 @@ export default function Topics() {
               )
             })}
           </div>
+          <hr className="mb-4" />
         </Fragment>
       ))}
     </div>

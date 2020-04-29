@@ -25,4 +25,7 @@ export const scriptures = [
   },
 ]
 
-export const topics = [{ letter: 'N', topics: ['New Jerusalem'] }]
+export const topics = [
+  { letter: 'I', topics: ['Isaiah'] },
+  { letter: 'N', topics: ['New Jerusalem'] },
+]
